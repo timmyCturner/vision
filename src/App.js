@@ -13,10 +13,7 @@ import carbonData from "./data/carbon.json";
 import temperatureData from "./data/temperature.json";
 
 import * as d3 from "d3";
-import Header from "./components/Header";
-import Contents from "./components/Contents";
-// import Features from "./components/Features";
-import Footer from "./components/Footer";
+
 
 class App extends React.Component {
     // you can create class-scope fields in here like in Java
@@ -45,10 +42,7 @@ class App extends React.Component {
         return (
             <div id="app" className="app-container">
                 <div id="page-wrapper">
-                    <Header />
-                    <Contents />
-                    {/* <Features /> */}
-                    <Footer />
+
                 </div>
 
                 <OWVisualization
@@ -98,7 +92,7 @@ class App extends React.Component {
             // order of promises is retained; reference: https://stackoverflow.com/questions/28066429/promise-all-order-of-resolved-values/28066851
             await Promise.all(promises)
                 .then((result) => {
-                    console.log("Request successful");
+                    // console.log("Request successful");
                     this.state.carbonData = result[0].data.co2; // directly modifying the state like this does NOT force re-render
                     this.state.methaneData = result[1].data.methane;
                     this.state.nitrousData = result[2].data.nitrous;

@@ -1,7 +1,6 @@
 import { setUpSun, drawSun, hoveredSunData, resizeSun } from "./sun";
 import { setupLandscape, drawLandscape, drawSeaboard } from "./landscape";
 import {
-    setupMicroPlasticDrops,
     drawMicroPlasticDots,
     resizeMicroPlastics,
     hoveredMicroPlasticData,
@@ -98,7 +97,7 @@ export default function sketch(p) {
             drawLegend(p, text, " ");
         } else if (hoveredSunData.mouseOver) {
             const text =
-                "The sun and ocean grow and change color with the tempature of the planet.";
+                "The sun and ocean grow and change color with the temperature of the planet.";
             const value = hoveredSunData.value
                 ? `Value: ${hoveredSunData.value} degree C`
                 : `[No Value For Current Date]`;
@@ -141,6 +140,5 @@ export default function sketch(p) {
         methaneData = newProps.methaneData;
         seaLevelRise = newProps.seaLevelRise;
         nitrousData = newProps.nitrousData;
-        console.log(newProps);
     };
 }

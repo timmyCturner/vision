@@ -36,14 +36,15 @@ export function drawGuide(p) {
 
     createText(
         "Interact with moving objects on the visualization to display value representation of pollutants corresponding with the current period in time." +
-            "\n\nSky Color: The color of the sky is based off carbon dioxide data, darkening as CO2 levels in the atmosphere increase." +
-            "\n\nOcean Color: The color of the ocean is based off ocean pollution data, darkening as levels in the ocean increase." +
-            "\n\nSun Size: The sun increases and decreases in size based on global temperature averages - larger means hotter, smaller means cooler." +
-            "\n\nSmog: The grey smog clouds increase and decrease in density, size, and number based off of nitrous oxide levels in the atmosphere." +
-            "\n\nOcean Level: The sea level rises or descends based off sea level data" +
+            "\n\nAudio: The audio adjusts intervals, detune, partials and effects processing based on all incoming data." +
+            "\n\nBubbles: The bubbles rising up through the ocean represent methane entering the atmosphere, and increase and decrease in number accordingly." +
+            "\n\nOcean Color: The color of the ocean is based on ocean pollution data, darkening as levels in the ocean increase." +
+            "\n\nOcean Level: The sea level rises or descends based on sea level data" +
             "\n\nMicroplastics: The small white dots drifting downward through the ocean represent microplastics, tiny plastic particulates polluting the oceans. They increase and decrease in number based on microplastic levels in the oceans." +
             "\n\nMacroplastics: The large brown and grey shapes on the ocean surface represent macroplastics, larger plastic objects polluting the oceans. They increase and decrease in number based on macroplastic levels in the oceans." +
-            "\n\nBubbles: The bubbles rising up through the ocean represent methane entering the atmosphere, and increase and decrease in number accordingly."
+            "\n\nSky Color: The color of the sky is based on carbon dioxide data, darkening as CO2 levels in the atmosphere increase." +
+            "\n\nSmog: The grey smog clouds increase and decrease in density, size, and number based on nitrous oxide levels in the atmosphere." +
+            "\n\nSun Size: The sun increases and decreases in size based on global temperature averages - larger means hotter, smaller means cooler."
     );
 
     p.noStroke();

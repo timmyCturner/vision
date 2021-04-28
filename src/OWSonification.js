@@ -152,12 +152,12 @@ class OWSonification extends React.Component {
 
             if (rand < this.state.consonanceProbability) {
                 intervalIndex = Math.floor(Math.random() * 4);
-                console.log("Consonant!");
+                // console.log("Consonant!");
                 this.am.frequency.rampTo(this.state.trebleFreqs[this.state.consonantIntervals[intervalIndex]]);
             }
             else {
                 intervalIndex = Math.floor(Math.random() * 8);
-                console.log("Dissonant!");
+                // console.log("Dissonant!");
                 this.am.frequency.rampTo(this.state.trebleFreqs[this.state.dissonantIntervals[intervalIndex]]);
             }
 
@@ -234,7 +234,7 @@ class OWSonification extends React.Component {
     componentDidMount() {
 
         if (window !== null && Reflect.has(window, "MediaRecorder")) {
-            console.log("Recorder available!");
+            // console.log("Recorder available!");
             this.rec = new Tone.Recorder();
             Tone.Destination.connect(this.rec);
             this.setState({ chromeFlag: 1 });
@@ -263,7 +263,7 @@ class OWSonification extends React.Component {
 
         this.fm = new Tone.FMOscillator("G3", "sine", "square").chain(this.dist, this.rev, Tone.Destination);
 
-        console.log("Mounted!");
+        // console.log("Mounted!");
     }
 
     componentDidUpdate(prevProps, prevState, snapshot) {
