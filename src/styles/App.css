@@ -1,0 +1,98 @@
+/* app css classes */
+
+/* .app-container {
+} */
+
+/* scroll button css classes */
+
+.scrollTop {
+    position: fixed; 
+    width: 10%;
+    bottom: 20px;
+    right: 20px;
+    height: 10%;
+    z-index: 1000;
+    cursor: pointer;
+    animation: fadeIn 0.3s;
+    transition: opacity 0.4s;
+    opacity: 0.5;
+  }
+  
+  .scrollTop:hover{
+    opacity: 1;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0.5;
+    }
+}
+
+/* slider css classes */
+
+.app-container .ticks {
+    font-size: 10px;
+}
+  
+.app-container
+.track,
+.track-inset,
+.track-overlay {
+    stroke-linecap: round;
+}
+
+.slider-svg {
+    position: absolute;
+    min-height: 100px;
+    visibility: hidden;
+    width: 100%;
+    background: rgba(255,255,255,0);
+}
+
+.app-container .track-text {
+    font-size: 0.8vw;
+}
+
+.app-container .label {
+    font-size: 15px;
+}
+
+.app-container .track {
+    stroke: #000;
+    stroke-opacity: 0.3;
+    stroke-width: 10px;
+}
+
+.app-container .track-inset {
+    stroke: #dcdcdc;
+    stroke-width: 8px;
+}
+
+.app-container .track-overlay {
+    pointer-events: stroke;
+    stroke-width: 50px;
+    stroke: transparent;
+    cursor: crosshair;
+}
+
+.app-container .handle {
+    fill: #fff;
+    stroke: #000;
+    stroke-opacity: 0.5;
+    stroke-width: 1.25px;
+}
+
+#play-button {
+    background: #f08080;
+    border-radius: 3px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+#play-button:hover {
+    background-color: #696969;
+}
